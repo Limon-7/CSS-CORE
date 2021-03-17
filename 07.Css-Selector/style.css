@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Start of selector */
+.header,
+.footer {
+  color: black;
+}
+h1 ~ p {
+  color: cadetblue;
+}
+.footer__info p::first-letter {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.footer__info p::first-line {
+  text-transform: uppercase;
+}
+.footer__info p::after {
+  content: "^";
+}
+.footer__info p::selection {
+  background-color: coral;
+}
+.header p:first-child {
+  color: red;
+}
+.header p:last-child {
+  color: red;
+}
+.header p:nth-child(2n) {
+  color: yellowgreen;
+}
+/* offtype */
+.ofType p:nth-child(2n) {
+  color: yellowgreen;
+}
+.ofType p:first-of-type {
+  text-transform: uppercase;
+}
+.ofType p:last-of-type {
+  font-weight: 700;
+  color: blueviolet;
+}
+.ofType p:nth-of-type(2n) {
+  /* color: red; */
+}
+.ofType p:nth-last-of-type(2n) {
+  color: gray;
+  background: #000;
+}
+.ofType p:not(:nth-last-child(2n)) {
+  /* color: gray;
+  background: #000; */
+  text-transform: uppercase;
+}
+input[type="checkbox"]:checked {
+  color: red;
+  fill: brown;
+}
+input:disabled {
+  background: red;
+}
+input:enabled {
+  border: 1px solid red;
+  outline-style: none;
+}
+/* css specity */
+.button {
+  font-size: 20px;
+  color: white;
+  background: blueviolet;
+  padding: 10px;
+  width: 150px;
+  margin-bottom: 10px;
+  border: none;
+}
+div.header .button {
+  background: #000;
+}
+/* end of selector */
+
+/* Satrt of CSS Color */
+.colors > div {
+  height: 100px;
+}
+.rgb {
+  margin: 20px;
+  background-color: rgb(255, 0, 255);
+}
+.rgba {
+  margin: 20px;
+  background-color: rgba(71, 6, 71, 0.9);
+}
+.hsl {
+  margin: 20px;
+  background-color: hsl(0, 10%, 30%);
+}
+.hsla {
+  margin: 20px;
+  background-color: hsla(0, 97%, 20%, 0.5);
+}
+/* End of CSS Color */
+/* start of display */
+#display {
+  display: none !important;
+}
+p > span {
+  display: block;
+  color: red;
+}
+/* end of display */
+/* Start float */
+.float {
+  background-color: #000;
+}
+.float > li {
+  list-style: none;
+  float: left;
+  margin: 20px;
+  text-transform: uppercase;
+  padding: 15px;
+}
+.float > li:nth-child(4) {
+  float: right;
+}
+.float > li:nth-child(5) {
+  /* float: left; */
+  clear: left;
+  float: right;
+}
+
+.float a {
+  text-decoration: none;
+}
+/* end float */
+
+/* start of gradient */
+/* end of gradient */

@@ -1,0 +1,10 @@
+.main {
+  height: 100%;
+}
+.main__sub {
+  height: 500px;
+  background-image: url(./images/bg1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}

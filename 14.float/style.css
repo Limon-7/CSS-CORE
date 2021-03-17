@@ -1,0 +1,21 @@
+.float {
+  background-color: #000;
+}
+.float > li {
+  list-style: none;
+  float: left;
+  margin: 20px;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.float > li:nth-child(5) {
+  /* float: left; */
+  /* clear: both; */
+  float: right;
+  clear: left;
+}
+
+.float a {
+  text-decoration: none;
+}

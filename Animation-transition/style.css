@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  background: blueviolet;
+  width: 90vw;
+  height: 90vh;
+  transition: 500ms linear;
+  backface-visibility: hidden;
+}
+.section__element {
+  /* display: inline-block;
+  background: #fff;
+  height: 130px;
+  width: 100px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  transform: skew(20deg);
+  animation: shaking 3s infinite alternate; */
+  /* display: inline-block; */
+  background-color: #aaaaaa;
+  height: 100px;
+  width: 100px;
+  transform: skew(20deg);
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: shaking 2s infinite;
+  animation-direction: alternate;
+  backface-visibility: hidden;
+}
+
+@keyframes shaking {
+  0% {
+    transform: skew(20deg, 20deg);
+  }
+
+  100% {
+    transform: skew(-20deg, -20deg);
+  }
+}

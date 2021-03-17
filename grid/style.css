@@ -1,0 +1,35 @@
+.wrapper {
+  border: 1px solid red;
+  background-color: rebeccapurple;
+  padding: 10px;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* grid-template-rows: 200px 100px; */
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+  /* grid-auto-flow: dense; */
+  /* place-content is the shortend property of align-items and justify-items */
+  /* align-items: stretch;
+  justify-items: stretch; */
+  place-content: stretch stretch;
+}
+.wrapper > div {
+  border: 2px solid #ffa94d;
+  border-radius: 5px;
+  background-color: #ffd8a8;
+  padding: 1em;
+  color: #d9480f;
+}
+.six {
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  grid-column: span 3;
+  grid-column: 2/-1;
+  grid-row: 2/4;
+}
+.four {
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  grid-column: 1/-1;
+}

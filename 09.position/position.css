@@ -1,0 +1,18 @@
+.section_1 {
+  height: 300px;
+  background: rgb(71, 11, 87);
+}
+.section_2 {
+  height: 400px;
+  width: 50%;
+  background: rgb(11, 5, 41);
+  position: relative;
+}
+.move_me {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background: rgb(130, 14, 197);
+  z-index: 100;
+}
